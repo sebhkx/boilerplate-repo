@@ -2,8 +2,9 @@
 # 🔐 Environment & Secrets
 # =====================================
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+!.env.sample
 *.key
 *.pem
 *.crt
@@ -68,7 +69,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .mkdocs/
-*.lock
 
 # =====================================
 # ⚙️ System & Misc
@@ -80,10 +80,8 @@ _site/
 *.orig
 *.swp
 *.swo
-*.lock
 *.pid
 *.seed
-*.pid.lock
 *.pid.*
 *.pidfile
 
@@ -97,11 +95,19 @@ _site/
 *.rar
 
 # =====================================
-# 🪴 Lockfiles
+# 🪴 Lockfiles IGNORED
 # =====================================
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+bun.lock
+bun.lockb
+uv.lock
+poetry.lock
+Pipfile.lock
+Cargo.lock
+Gemfile.lock
+composer.lock
 
 # =====================================
 # 🧾 Output / Temporary Directories
