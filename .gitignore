@@ -68,7 +68,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .mkdocs/
-.DS_Store
 *.lock
 
 # =====================================
@@ -98,11 +97,11 @@ _site/
 *.rar
 
 # =====================================
-# 🪴 Optional: Remove lockfiles (if not needed)
+# 🪴 Lockfiles
 # =====================================
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # =====================================
 # 🧾 Output / Temporary Directories
